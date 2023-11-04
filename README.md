@@ -1,4 +1,8 @@
-# react-native-receive-sharing-intent
+# react-native-receive-sharing
+
+Forked from [ajith-ab/react-native-receive-sharing-intent](https://github.com/ajith-ab/react-native-receive-sharing-intent)
+
+Updated dependency versions and fixed bugs in native code (android).
 
 A React Native plugin that enables React Native apps to receive sharing photos, videos, text, urls or any other file types from another app.
 
@@ -6,8 +10,8 @@ Also, supports iOS Share extension and launching the host app automatically. Che
 
 ## Demo
 
-| Android | Ios | 
-| :---: | :---: | 
+| Android | Ios |
+| :---: | :---: |
 | <img height="400" src="https://raw.githubusercontent.com/ajith-ab/react-native-receive-sharing-intent/master/doc/android.gif" />| <img height="400"  src="https://raw.githubusercontent.com/ajith-ab/react-native-receive-sharing-intent/master/doc/ios.gif" /> |
 
 

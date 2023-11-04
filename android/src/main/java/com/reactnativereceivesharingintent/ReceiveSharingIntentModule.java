@@ -18,6 +18,7 @@ public class ReceiveSharingIntentModule extends ReactContextBaseJavaModule {
 
   private final ReactApplicationContext reactContext;
   private ReceiveSharingIntentHelper receiveSharingIntentHelper;
+  private Intent oldIntent;
 
   public ReceiveSharingIntentModule(ReactApplicationContext reactContext) {
     super(reactContext);
@@ -30,7 +31,9 @@ public class ReceiveSharingIntentModule extends ReactContextBaseJavaModule {
   protected void onNewIntent(Intent intent) {
     Activity mActivity = getCurrentActivity();
     if(mActivity == null) { return; }
-    mActivity.setIntent(intent);
+    if (oldIntent != null) {
+      mActivity.setIntent(oldIntent);
+    }
   }
 
   @RequiresApi(api = Build.VERSION_CODES.KITKAT)
@@ -40,6 +43,7 @@ public class ReceiveSharingIntentModule extends ReactContextBaseJavaModule {
     if(mActivity == null) { return; }
     Intent intent = mActivity.getIntent();
     receiveSharingIntentHelper.sendFileNames(reactContext, intent, promise);
+    oldIntent = mActivity.getIntent();
     mActivity.setIntent(null);
   }
 
