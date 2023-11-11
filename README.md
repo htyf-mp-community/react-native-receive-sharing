@@ -1,4 +1,4 @@
-# react-native-receive-sharing
+# @tinnoland/react-native-receive-sharing
 
 Forked from [ajith-ab/react-native-receive-sharing-intent](https://github.com/ajith-ab/react-native-receive-sharing-intent)
 
