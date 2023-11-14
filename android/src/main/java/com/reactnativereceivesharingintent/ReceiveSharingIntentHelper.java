@@ -166,6 +166,7 @@ public class ReceiveSharingIntentHelper {
 
 
   public void clearFileNames(Intent intent){
+    if(intent == null) return;
     String type = intent.getType();
     if(type == null) return;
     if (type.startsWith("text")) {
