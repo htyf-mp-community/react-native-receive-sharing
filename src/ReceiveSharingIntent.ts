@@ -17,6 +17,7 @@ class ReceiveSharingIntentModule implements IReceiveSharingIntent {
     errorHandler: Function,
     protocol: string = 'ShareMedia'
   ) {
+    if (!Linking) return;
     if (this.isIos) {
       Linking.getInitialURL()
         .then((res: any) => {
@@ -42,6 +43,7 @@ class ReceiveSharingIntentModule implements IReceiveSharingIntent {
   }
 
   clearReceivedFiles() {
+    if (!ReceiveSharingIntent) return;
     ReceiveSharingIntent.clearFileNames();
   }
 
@@ -50,6 +52,7 @@ class ReceiveSharingIntentModule implements IReceiveSharingIntent {
     errorHandler: Function,
     url: string
   ) {
+    if (!ReceiveSharingIntent) return;
     if (this.isIos) {
       ReceiveSharingIntent.getFileNames(url)
         .then((data: any) => {
