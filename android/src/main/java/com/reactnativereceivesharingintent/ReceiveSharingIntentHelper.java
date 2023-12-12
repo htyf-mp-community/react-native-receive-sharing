@@ -171,7 +171,7 @@ public class ReceiveSharingIntentHelper {
     if(type == null) return;
     if (type.startsWith("text")) {
       intent.removeExtra(Intent.EXTRA_TEXT);
-    } else if (type.startsWith("image") || type.startsWith("video") || type.startsWith("application")) {
+    } else if (type.startsWith("image") || type.startsWith("video") || type.startsWith("audio") || type.startsWith("application")) {
       intent.removeExtra(Intent.EXTRA_STREAM);
     }
   }

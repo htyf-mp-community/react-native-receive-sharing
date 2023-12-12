@@ -113,6 +113,7 @@ object FileDirectory {
           when {
             startsWith("image") -> "IMG"
             startsWith("video") -> "VID"
+            startsWith("audio") -> "AUD"
             else -> "FILE"
           }
         }

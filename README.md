@@ -23,6 +23,7 @@ Also, supports iOS Share extension and launching the host app automatically. Che
 4. <a href="https://ajith-ab.github.io/react-native-receive-sharing-intent/docs/ios" >IOS</a>
 
 ## Publish
+1. Update version
 1. npm login
 1. npm publish --access public
 
