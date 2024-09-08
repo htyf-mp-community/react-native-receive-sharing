@@ -1,11 +1,11 @@
 {
-  "name": "@tinnoland/react-native-receive-sharing",
+  "name": "@htyf-mp/react-native-receive-sharing",
   "version": "1.0.6",
   "description": "A React Native plugin that enables React Native apps to receive sharing photos, videos, text, urls or any other file types from another app.",
   "main": "lib/commonjs/index",
-  "module": "lib/module/index",
+  "module": "lib/commonjs/index",
   "types": "lib/typescript/index.d.ts",
-  "react-native": "src/index",
+  "react-native": "lib/commonjs/index",
   "source": "src/index",
   "files": [
     "src",
